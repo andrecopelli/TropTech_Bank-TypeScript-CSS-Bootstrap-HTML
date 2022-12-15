@@ -1,0 +1,55 @@
+body{
+    width: 100%;
+    height: 100vh;
+    position: relative; 
+    color: rgb(239, 240, 241);   
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("../img/money.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    color: aliceblue;
+    opacity: 0.85;
+}
+
+.label{
+    color: aliceblue;
+}
+
+.btn{
+    width: 150px;
+    height: 45px;
+    box-shadow: 10px 10px 10px 2px rgba(18, 29, 19, 0.539);
+}
+
+.btn:hover{
+    cursor: pointer;
+    transform:scale(1.2);
+    background-color: rgb(52, 166, 52);
+}
+
+.head-container{
+    background: rgba(146, 146, 146, 0.333);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.196);
+}
+
+.head-container:hover{
+    transform:scale(1.2);
+    background: rgba(255, 255, 255, 0.031);
+    
+}
